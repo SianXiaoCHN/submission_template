@@ -1,0 +1,103 @@
+\documentclass[journal=jctcce]{achemso}
+%JCTC: jctcce, JPC B: jpcbfk, JPC L: jpclcd
+%optional: layout=twocolumn
+\usepackage{amsmath, amsfonts, amssymb, graphicx, subfigure,url,indentfirst,multirow,multicol,xr}
+% comment this if you don't need external supporting information file
+% !! compile SI.tex first !!
+\externaldocument{SI}
+\usepackage[labelfont=bf,labelsep=period]{caption}
+
+\title{Add Title Here}
+
+\author{First Author}
+\affiliation{Department of Chemistry, Center for Research Computing, Center for Drug Discovery, Design, and Delivery (CD4), Southern Methodist University, Dallas, Texas, United States of America}
+
+\author{Peng Tao}
+\affiliation{Department of Chemistry, Center for Research Computing, Center for Drug Discovery, Design, and Delivery (CD4), Southern Methodist University, Dallas, Texas, United States of America}
+\email{ptao@smu.edu}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+Abstract
+
+\end{abstract}
+
+\section{Introduction}
+
+Introduction with some citations. \cite{ryu2019bayesian} Cite multiple papers. \cite{torng2019graph,le2009fpocket}
+
+\section{Methods}
+
+\subsection{Molecular Dynamics (MD) Simulations}
+
+Describe MD simulations. 
+
+\subsection{Machine Learning (ML) Methods}
+
+Introduce ML methods. 
+
+Add some equations: 
+
+\begin{equation}
+    a ^ 2 + b ^ 2 = c ^ 2
+\end{equation}
+
+\section{Results}
+
+\subsection{Figures}
+
+\begin{figure}[t]
+ \includegraphics[width=0.45\textwidth]{figure1.pdf}
+ \caption{Figure caption} 
+ \label{fig:1}
+\end{figure}
+
+Cite figure in this file: Figure \ref{fig:1}. 
+
+Cite figure in supporting information: Figure \ref{fig:s1}
+
+\subsection{Tables}
+
+\begin{table}[t]
+\caption{Table caption.}
+\begin{tabular}{c c}
+\hline
+ header 1 & header 2\\
+\hline
+ value 11 \textsuperscript{\emph{a}} & value 12\\
+ value 21 & value 22\\
+\hline
+\end{tabular}
+\label{tab:1}
+
+\textsuperscript{\emph{a}} additional information. 
+\end{table}
+
+Cite table: Table \ref{tab:1}. 
+
+Cite table in supporting information: Table \ref{tab:s1}
+
+\section{Discussion}
+
+Discuss your results. 
+
+\section{Conclusion}
+
+Conclude everything. 
+
+\section*{Code and Data availability}
+The authors declare that all data supporting the findings of this study are available within the paper. Code is availale on GitHub at \url{https://github.com/orgs/smu-tao-group}. 
+
+\bibliography{ref.bib}
+
+\section*{Acknowledgment}
+Computational time was generously provided by Southern Methodist University's Center for Research Computing. Research reported in this paper was supported by the National Institute of General Medical Sciences of the National Institutes of Health under Award No. XXX.
+
+\section*{Competing interests}
+The authors declare no competing interests.
+
+\end{document}

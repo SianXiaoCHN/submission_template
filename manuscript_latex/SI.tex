@@ -1,0 +1,48 @@
+
+\documentclass[journal = jctcce]{achemso}
+%JCTC: jctcce, JPC B: jpcbfk, JPC L: jpclcd
+\usepackage{amsmath,amsfonts,amssymb,graphicx,subfigure,xcolor,url,indentfirst,multirow,multicol}
+\usepackage[labelfont=bf,labelsep=period]{caption}
+\renewcommand*{\thesection}{S\arabic{section}}
+\renewcommand*{\thefigure}{S\arabic{figure}}
+\renewcommand*{\thetable}{S\arabic{table}}
+
+\title{Supporting Information for \\ Add Title Here}
+
+\author{First Author}
+\affiliation{Department of Chemistry, Center for Research Computing, Center for Drug Discovery, Design, and Delivery (CD4), Southern Methodist University, Dallas, Texas, United States of America}
+
+\author{Peng Tao}
+\affiliation{Department of Chemistry, Center for Research Computing, Center for Drug Discovery, Design, and Delivery (CD4), Southern Methodist University, Dallas, Texas, United States of America}
+\email{ptao@smu.edu}
+
+\begin{document}
+
+\maketitle
+
+\clearpage
+
+\section{Figures}
+
+\begin{figure}[h]
+ \includegraphics[width=0.45\textwidth]{figure1.pdf}
+ \caption{Figure caption} 
+ \label{fig:s1}
+\end{figure}
+
+\section{Tables}
+
+\begin{table}[h]
+\caption{Table caption.}
+\begin{tabular}{c c}
+\hline
+ header 1 & header 2\\
+\hline
+ value 11 & value 12\\
+ value 21 & value 22\\
+\hline
+\end{tabular}
+\label{tab:s1}
+\end{table}
+
+\end{document}
